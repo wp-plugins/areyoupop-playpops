@@ -1,0 +1,138 @@
+@charset "utf-8";
+/* CSS Document */
+
+#playpops .header 
+{
+    font-size: 16px;
+}
+	
+#playpops-wrapper
+{
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+	display:block;
+
+	/*
+	padding:0px;
+	height:100%;
+	*/
+	outline:none;
+}
+
+#playpops-wrapper iframe 
+{
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+#playpops-wrapper object
+{
+	/*
+	position:relative;
+	*/
+	
+	height: 100%;
+	position: absolute;
+	top: 50%;
+	left: 0;
+	width: 100%;
+	transform:translateY(-50%);
+	-ms-transform:translateY(-50%);
+	-webkit-transform: translateY(-50%);
+}
+
+#playpops
+{
+	display: none; 
+	height: 290px; 
+	top: 25%; 
+	background: none repeat scroll 0% 0% white; 
+	position: absolute;
+	border-width: 10px;
+	z-index: 1200; 
+	opacity: 0.9; 
+	border-style: solid; 
+	border-radius: 22px;
+}
+
+.facebookwidget
+{
+	background: none repeat scroll 0px 0px rgb(255, 255, 255); 
+	margin-top: 0px; 
+	/*
+	width: ' . ($boxwidth - (2 * $padding)) . 'px; 
+	padding :' . $padding . 'px;
+	*/
+	height: 100px;
+	text-align: center;
+}
+
+.facebookwidget iframe
+{
+	position: relative !important;
+}
+
+.facebookwidget img 
+{
+  width: 12%;
+}
+
+.facebookwidget a {
+    color: #3c9dd0 !important;
+    font-size: 14px !important;
+}
+
+.facebookwidget a img 
+{
+    display: inline !important;
+}
+
+.fbframelike600 {
+    position: absolute;
+    display:block;
+}
+
+.fbframelike320
+{
+	position: absolute;
+	display:none;
+}
+
+.sharemessage 
+{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 1200px) 
+{
+		
+	#playpops .header 
+	{
+   	font-size: 12px !important;
+	}
+		
+		
+	.fbframe320
+	{
+		display:block;
+	}
+	
+	.fbframe600
+	{
+		display:none;
+	}
+}
+
+@media screen and (max-width: 320px)
+{ 	
+  #playpops .header 
+	{
+   	font-size: 10px !important;
+	}
+}
